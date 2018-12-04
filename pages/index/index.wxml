@@ -1,0 +1,74 @@
+<scroll-view class="page" bindscrolltolower="lower" scroll-y="true" scroll-into-view="{{toView}}" upper-threshold="10">
+  <view class="section swiper-container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="header_swiper">
+      <block wx:for="{{imgUrls}}" wx:for-item="item" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="line-block"></view>
+  <view class="active-section">
+    <view class="activity" wx:for="{{activities}}" wx:for-item="activity" data-activity-id="{{activity.link_id}}" data-activity-type="{{activity.type}}" data-activity-url="{{activity.link_url}}" bindtap="navigateToActivity">
+      <image mode="aspectFill" src="{{activity.image_src}}"></image>
+      <label>{{activity.title}}</label>
+    </view>
+  </view>
+
+  <view class="line-block"></view>
+
+  <view class='notice-section'>
+    <image mode="aspectFill" src="https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/mobile_qrcode@2x.png">
+    </image>
+    <text class='iconfont icon-zhuye'>你关心的就是头条你关心的就是头条你关心的就是头条你关心的就是头条</text>
+  </view>
+
+  <view class="line-block"></view>
+
+  <view class='module-section'>
+    <view class='module-left'></view>
+    <view class='module-right'>
+      <view class='module-item top-item'></view>
+      <view class='module-item bottom-item'></view>
+    </view>
+  </view>
+  <view class="line-block"></view>
+  <view class='ad'>
+    <text class='title-text'>hello main</text>
+    <view>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="header_swiper">
+        <block wx:for="{{imgUrls}}" wx:for-item="item" wx:key="index">
+          <swiper-item>
+            <image src="{{item}}"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <view class="line-block"></view>
+  <view class='goods-section'>
+    <text class='title-text'>hello main</text>
+    <view class='goods-item'>
+      <view class='goods-image'>
+        <image src="https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/mobile_qrcode@2x.png">
+        </image>
+      </view>
+      <view class='goods-info'>
+        <view class='goods-name'>
+          <text>商品详情</text>
+        </view>
+        <view class='goods-description'>
+          <text class='goods-price'>40元</text>
+          <text class='goods-sales'>销量</text>
+          <view class='goods-add-cart'>加入购物车</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='news-section'>
+
+  </view>
+
+</scroll-view>

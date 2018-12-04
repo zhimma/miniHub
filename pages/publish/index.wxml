@@ -1,0 +1,26 @@
+<scroll-view>
+  <view class='upload-section'>
+    <view class='image-section'>
+      <image src='../../static/icon/upload.png'></image>
+    </view>
+    <view class='button-section'>
+      <text>上传图片</text>
+    </view>
+  </view>
+  <view class="line-block"></view>
+  <view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="form-section">
+        <input placeholder="请输入标题" auto-focus/>
+      </view>
+      <view class="line-block"></view>
+      <view class="form-section">
+        <textarea bindblur="bindTextAreaBlur"  placeholder="自动变高" />
+      </view>
+      <view class="line-block"></view>
+      <view class="btn-area">
+        <button type='primary' form-type="submit">Submit</button>
+      </view>
+    </form>
+  </view>
+</scroll-view>

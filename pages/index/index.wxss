@@ -1,0 +1,145 @@
+/**index.wxss**/
+.page{
+  background-color: hsl(69, 83%, 56%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.title-text{
+  padding-left:10rpx 
+}
+.swiper-container {
+  margin-top: 0;
+  padding: 0;
+}
+
+.swiper-container swiper {
+  height: 300rpx;
+  width: 100%;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+  flex-grow:0
+}
+
+.active-section {
+  display: flex;
+  /* flex-direction: row;  item 排列方向 
+  flex-wrap:wrap;一条轴线排不下，如何换行 */
+  flex-flow:row wrap;
+  justify-content:flex-start;
+  align-content:space-around;
+  padding: 0;
+  height: 400rpx;
+}
+
+.activity {
+  width: 25%;
+  text-align: center;
+}
+
+.activity image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  margin-top: 25rpx;
+  border-radius: 50%;
+}
+
+.activity label {
+  display: block;
+  line-height: 50rpx;
+  font-size: 25rpx;
+}
+.notice-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+}
+.notice-section image{
+  flex-shrink: 0;
+  /**flex-basis: 60rpx;**/
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx
+}
+.notice-section text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-grow: 0
+}
+.module-section {
+  height: 400rpx;
+  width: 100%;
+  display:flex;
+  background-color: red;
+  flex-direction:row;
+}
+.module-left{
+  background-color: green;
+  width: 50%;
+}
+.module-right{
+  width: 50%;
+}
+.goods-item{
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin-top: 10rpx;
+}
+.goods-image{
+  width: 30%;
+  height: 200rpx;
+}
+.goods-image image{
+  width: 100%;
+  height: 100%;
+  flex-grow:0
+}
+.goods-info{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-content:center;
+}
+.goods-description{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 100%;
+}
+.goods-name{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: green;
+}
+.top-item{
+  background-color: yellow;
+  height: 200rpx;
+  width: 100%;
+}
+.bottom-item{
+  background-color: blue;
+  height:  200rpx;
+  width: 100%;
+}
+.goods-price{
+  background-color: red;
+}
+.goods-sales{
+  background-color: blue
+}
+.goods-add-cart{
+  background-color: pink;
+}

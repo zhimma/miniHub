@@ -1,0 +1,26 @@
+/**app.wxss**/
+page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 32rpx;
+}
+
+.page-body {
+  padding: 20rpx 0;
+}
+.line-block{
+  padding-top: 10px;
+  background: #F8F8F8;
+  width: 100%;
+  height: 5rpx;
+}
+
+.text-aligin-center {
+  text-align: center;
+}
+
+@import "static/css/iconfont.wxss"

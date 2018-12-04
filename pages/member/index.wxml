@@ -1,0 +1,18 @@
+<scroll-view>
+  <view class='userinfo-section'>
+    <view class='userinfo-head-img'>
+      <image src='{{userInfo.avatar_url}}'></image>
+    </view>
+    <view class='userinfo-info'>
+      <text>{{userInfo.nick_name}}</text>
+      <text>你关心的就是头条你关心的就是头条你关心的就是头条你</text>
+    </view>
+  </view>
+   <view class="line-block"></view>
+   <view class="active-section">
+    <view class="activity" wx:for="{{activities}}" wx:for-item="activity" data-activity-id="{{activity.link_id}}" data-activity-type="{{activity.type}}" data-activity-url="{{activity.link_url}}" bindtap="navigateToActivity">
+      <image mode="aspectFill" src="{{activity.image_src}}"></image>
+      <label>{{activity.title}}</label>
+    </view>
+  </view>
+</scroll-view>

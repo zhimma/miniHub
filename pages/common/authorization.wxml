@@ -1,0 +1,14 @@
+<view class='auth-section'>
+  <view class='logo-section text-aligin-center'>
+    <image class='logo-section__img' src="http://zhimakaimen-online.oss-cn-beijing.aliyuncs.com/logo.png"></image>
+  </view>
+  <view class='title-section text-aligin-center'>
+    <text>欢迎你</text>
+  </view>
+  <view class='info-section text-aligin-center'>
+    <text>请微信授权后使用芝麻开门online小程序</text>
+  </view>
+  <view class='btn-section text-aligin-center'>
+    <button type='primary' size='mini' open-type="getUserInfo" bindgetuserinfo="onGetuserinfo"><i class="iconfont icon-wechat 2x"></i>微信授权登录</button>
+  </view>
+</view>
